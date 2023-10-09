@@ -6,12 +6,13 @@
 }
   
 #bosco {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     background-image: url(img/3-saltito.png);
-    background-size: 50px 50px;
+    background-size: 150px 150px;
     position: relative;
-    top: 150px;
+    top: 55px;
+    right: 42px;
 }
 
 .jump {
@@ -20,22 +21,45 @@
 
 @keyframes jump {
     0% {
-      top: 150px;
+      top: 55px;
     }
 
     30% {
-        top: 130px;
+        top: 5px;
     }
 
     50% {
-        top: 80px;
+        top: 2.5px;
     }
 
     80% {
-        top: 130px;
+        top: 5px;
     }
 
     100% {
-        top: 150px;
+        top: 55px;
     }
 }
+
+#pelota{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 13px;
+    left: 550px;
+
+    background-image: url("img/pelota.png");
+    background-size: 35px 35px;
+    
+    animation: block 1s infinite;
+}
+
+@keyframes block {
+    0% {
+      left: 550px;
+    }
+  
+    100% {
+      left: -10px;
+    }
+  }
