@@ -15,6 +15,17 @@
     right: 42px;
 }
 
+@keyframes animarBosco {
+    from{
+        background-position-x: -84px;
+    }
+    to{
+        background-position-x: -252;
+    }
+}
+.boscoCorre{
+    animation: animarBosco 0.25 steps(2) infinite;
+}
 .jump {
     animation: jump 0.3s linear;
 }
